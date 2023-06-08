@@ -5,6 +5,10 @@ compose = "2022.10.00"
 activity-compose = "1.7.2"
 life-cycle = "2.6.1"
 
+junit = "4.13.2"
+androidx-junit = "1.1.5"
+androidx-espresso = "3.5.1"
+
 [libraries]
 android-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
 
@@ -20,6 +24,12 @@ compose-ui = { module = "androidx.compose.ui:ui" }
 compose-graphics = { module = "androidx.compose.ui:ui-graphics"}
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling"}
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androix.test.ext", name = "junit", version.ref = "androidx-junit"}
+androidx-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidx-espresso" }
+compose-junit = { module = "androidx.compose.ui:ui-test-junit4"}
 compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest"}
 
 # LifeCycle
